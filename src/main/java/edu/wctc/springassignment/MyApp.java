@@ -7,6 +7,7 @@ public class MyApp {
         springContext.register(AppConfig.class);
         springContext.refresh();
 
-
+        ReportGenerator report = (ReportGenerator)springContext.getBean("reportGenerator");
+        report.generateSales();
     }
 }

@@ -6,6 +6,8 @@ import edu.wctc.springassignment.iface.ShippingPolicy;
 public class FreeShippingOver100 implements ShippingPolicy {
     @Override
     public double getShippingCost(Sale sale) {
-        return 0;
+       // if(sale > 100)
+        int shippingCost = 0;
+        return shippingCost;
     }
 }

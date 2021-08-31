@@ -15,11 +15,27 @@ public class ConsoleInput implements SalesInput {
 
     @Override
     public List<Sale> getSales() {
+        String customerName = "";
+        String country = "";
+        double saleAmount = 0;
 
-        for (int i = 0; i < getSales().size() ; i++) {
-            System.out.println(getSales());
 
-        }
+
+        System.out.println("Enter Customer Name:");
+        System.out.println(customerName);
+        scanner.nextLine();
+        System.out.println("Enter Country:");
+        System.out.println(country);
+        scanner.nextLine();
+        System.out.println("Enter Sale Amount:");
+        System.out.println(saleAmount);
+        scanner.nextLine();
+
+
+        
+
         return getSales();
     }
+
+
 }

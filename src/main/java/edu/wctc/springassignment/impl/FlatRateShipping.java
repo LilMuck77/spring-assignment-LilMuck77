@@ -7,8 +7,9 @@ import edu.wctc.springassignment.iface.ShippingPolicy;
 public class FlatRateShipping implements ShippingPolicy {
     @Override
     public double getShippingCost(Sale sale) {
+        double flatRate = 1.1;
 
-        return 1.5;
+        return flatRate;
     }
 
 }
